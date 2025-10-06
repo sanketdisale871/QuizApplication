@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
     <!-- <img src="./controllers/logo.png" alt="GlobalEase Logo" width="150"> -->
-    <img src="./public/img/logo.png" alt="GlobalEase Logo" width="150">
+    <!-- <img src="./public/img/logo.png" alt="GlobalEase Logo" width="150"> -->
   <h1 align="center"><b>Quiz Application: AI-Powered Companion for Smarter Financial Health and Family Wealth Management.</b></h1>
 
 </div>
@@ -85,17 +85,48 @@ The technologies and tools used are:
   POST /api/quiz
   ```
 
-  **Description:**  
-  Creates a new quiz by providing a quiz title and other optional metadata.
+  **Description:**
+
+- Creates a new quiz by providing a quiz title and other optional metadata.
 
   **Request Body and Response Example:**  
    ![alt text](qzCreation.jpg)
 
 - Create Question
-  ![alt text](creatQs.png)
+
+```sh
+  POST /api/:quiztitle/questions
+```
+
+**Description:**
+
+- Adds one or more questions to an existing quiz.Creates a new quiz by providing a quiz title and other optional metadata.
+
+**Request Body and Response Example:**  
+ ![alt text](creatQs.png)
 
 - Get All Questions
-  ![alt text](getAllQns.jpg)
+
+```sh
+  GET /api/:quiztitle
+```
+
+**Description:**
+
+- Fetches all questions for a given quiz title (without showing correct answers).
+
+**Request Body and Response Example:**  
+ ![alt text](getAllQns.jpg)
 
 - Quiz Submit
-  ![My Family](qzSubmit.jpg)
+
+```sh
+    POST /api/:quiztitle/submit
+```
+
+**Description:**
+
+- Submits a user's answers for evaluation and returns the total score.
+
+**Request Body and Response Example:**  
+ ![My Family](qzSubmit.jpg)
