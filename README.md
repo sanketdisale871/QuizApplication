@@ -2,7 +2,7 @@
 <div align="center">
     <!-- <img src="./controllers/logo.png" alt="GlobalEase Logo" width="150"> -->
     <!-- <img src="./public/img/logo.png" alt="GlobalEase Logo" width="150"> -->
-  <h1 align="center"><b>Quiz Application: AI-Powered Companion for Smarter Financial Health and Family Wealth Management.</b></h1>
+  <h1 align="center"><b>Online Quiz Application API</b></h1>
 
 </div>
 
@@ -16,16 +16,6 @@ Enhancing Customer Experience in Banking and Finance - Empowering Customers with
 ## ♾️ Solution
 
 Citiwise is a personalized financial advisory platform designed to help users make better financial decisions with features like a dual scoring system to monitor credit and financial health, AI-driven spending and saving goals, and personalized investment suggestions based on risk tolerance and income. It enables families to manage all accounts in one place, offering clear visualizations for better financial tracking. Additionally, Citiwise includes innovative tools like citiGPT, an AI financial assistant, a gamified self-paced learning path for financial literacy, and daily learning challenges to encourage user engagement and improve financial management skills. -->
-
-## ⚙️ Built With
-
-The technologies and tools used are:
-
-- HTML
-- CSS
-- JavaScript
-- NodeJS
-- ExpressJS
 
 <!-- GETTING STARTED -->
 
@@ -114,3 +104,13 @@ POST /api/quiz
 
 **Request Body and Response Example:**  
  ![My Family](qzSubmit.jpg)
+
+## ⚙️ Built With
+
+The technologies and tools used are:
+
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- ExpressJS
