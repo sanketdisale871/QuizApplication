@@ -79,54 +79,38 @@ The technologies and tools used are:
 
 ## Endpoints of Quiz App
 
-- Quiz Creation
+### Quiz Creation : Creates a new quiz by providing a quiz title and other optional metadata.
 
-  ```sh
-  POST /api/quiz
-  ```
+```sh
+POST /api/quiz
+```
 
-  **Description:**
+**Request Body and Response Example:**  
+ ![alt text](qzCreation.jpg)
 
-- Creates a new quiz by providing a quiz title and other optional metadata.
-
-  **Request Body and Response Example:**  
-   ![alt text](qzCreation.jpg)
-
-- Create Question
+- Create Question : Adds one or more questions to an existing quiz.Creates a new quiz by providing a quiz title and other optional metadata.
 
 ```sh
   POST /api/:quiztitle/questions
 ```
 
-**Description:**
-
-- Adds one or more questions to an existing quiz.Creates a new quiz by providing a quiz title and other optional metadata.
-
 **Request Body and Response Example:**  
  ![alt text](creatQs.png)
 
-- Get All Questions
+- Get All Questions: Fetches all questions for a given quiz title (without showing correct answers).
 
 ```sh
   GET /api/:quiztitle
 ```
 
-**Description:**
-
-- Fetches all questions for a given quiz title (without showing correct answers).
-
 **Request Body and Response Example:**  
  ![alt text](getAllQns.jpg)
 
-- Quiz Submit
+- Quiz Submit: Submits a user's answers for evaluation and returns the total score.
 
 ```sh
     POST /api/:quiztitle/submit
 ```
-
-**Description:**
-
-- Submits a user's answers for evaluation and returns the total score.
 
 **Request Body and Response Example:**  
  ![My Family](qzSubmit.jpg)
