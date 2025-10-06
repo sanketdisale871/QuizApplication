@@ -88,7 +88,7 @@ POST /api/quiz
 **Request Body and Response Example:**  
  ![alt text](qzCreation.jpg)
 
-- Create Question : Adds one or more questions to an existing quiz.Creates a new quiz by providing a quiz title and other optional metadata.
+### Create Question : Adds one or more questions to an existing quiz.Creates a new quiz by providing a quiz title and other optional metadata.
 
 ```sh
   POST /api/:quiztitle/questions
@@ -97,7 +97,7 @@ POST /api/quiz
 **Request Body and Response Example:**  
  ![alt text](creatQs.png)
 
-- Get All Questions: Fetches all questions for a given quiz title (without showing correct answers).
+### Get All Questions: Fetches all questions for a given quiz title (without showing correct answers).
 
 ```sh
   GET /api/:quiztitle
@@ -106,7 +106,7 @@ POST /api/quiz
 **Request Body and Response Example:**  
  ![alt text](getAllQns.jpg)
 
-- Quiz Submit: Submits a user's answers for evaluation and returns the total score.
+### Quiz Submit: Submits a user's answers for evaluation and returns the total score.
 
 ```sh
     POST /api/:quiztitle/submit
