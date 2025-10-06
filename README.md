@@ -9,30 +9,23 @@
 <!-- ABOUT THE PROJECT -->
 <br>
 
-## ♾️ Problem Statement
+<!-- ## ♾️ Problem Statement
 
 Enhancing Customer Experience in Banking and Finance - Empowering Customers with AI-Driven Financial Insights.
 
 ## ♾️ Solution
 
-Citiwise is a personalized financial advisory platform designed to help users make better financial decisions with features like a dual scoring system to monitor credit and financial health, AI-driven spending and saving goals, and personalized investment suggestions based on risk tolerance and income. It enables families to manage all accounts in one place, offering clear visualizations for better financial tracking. Additionally, Citiwise includes innovative tools like citiGPT, an AI financial assistant, a gamified self-paced learning path for financial literacy, and daily learning challenges to encourage user engagement and improve financial management skills.
+Citiwise is a personalized financial advisory platform designed to help users make better financial decisions with features like a dual scoring system to monitor credit and financial health, AI-driven spending and saving goals, and personalized investment suggestions based on risk tolerance and income. It enables families to manage all accounts in one place, offering clear visualizations for better financial tracking. Additionally, Citiwise includes innovative tools like citiGPT, an AI financial assistant, a gamified self-paced learning path for financial literacy, and daily learning challenges to encourage user engagement and improve financial management skills. -->
 
 ## ⚙️ Built With
 
 The technologies and tools used are:
 
-- LLM
-- Langchain
-- Groq
-- Pinecone
-- NLP
 - HTML
 - CSS
-- Javascript
-- Python
+- JavaScript
 - NodeJS
 - ExpressJS
-- Bootstrap
 
 <!-- GETTING STARTED -->
 
@@ -43,7 +36,7 @@ The technologies and tools used are:
 1. Clone the repository
 
    ```sh
-   git clone https://github.com/sanketdisale871/citiWise.git
+   git clone https://github.com/sanketdisale871/QuizApplication.git
    ```
 
 2. Install the dependencies:
@@ -54,24 +47,55 @@ The technologies and tools used are:
 
 3. Start Application:
    ```sh
-   nodemon index.js
+   nodemon server.js
    ```
+
+### :file_folder: File Structure
+
+```
+.
+├── controller
+│   ├── allQuestions.controller.js
+|   ├── question.controller.js
+│   ├── quiz.controller.js
+│   ├── subQuiz.controller.js
+│
+├── db
+|   ├── database.js
+|
+├── model
+|   ├── question.models.js
+|   ├── quiz.models.js
+|
+├── route
+|   ├── route.js
+|
+├── server.ja
+|
+└── README.md
+```
 
 <!-- CONTRIBUTING -->
 
-## Some Glimpses of WorkConnect
+## Endpoints of Quiz App
 
-- Dashboard
-  ![alt text](image.png)
+- Quiz Creation
 
-- citiGPT
-  ![alt text](image-1.png)
+  ```sh
+  POST /api/quiz
+  ```
 
-- My Family
-  ![My Family](image-2.png)
+  **Description:**  
+  Creates a new quiz by providing a quiz title and other optional metadata.
 
-- My Investments
-  ![Investments](image-3.png)
+  **Request Body and Response Example:**  
+   ![alt text](qzCreation.jpg)
 
-- My Liabilities
-  ![alt text](image-4.png)
+- Create Question
+  ![alt text](creatQs.png)
+
+- Get All Questions
+  ![alt text](getAllQns.jpg)
+
+- Quiz Submit
+  ![My Family](qzSubmit.jpg)

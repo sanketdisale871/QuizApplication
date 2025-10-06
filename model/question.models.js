@@ -6,9 +6,9 @@ const questionSchema = new mongoose.Schema({
   options: [
     {
       text: { type: String, required: true },
-      isCorrect: { type: Boolean, default: false }
-    }
-  ]
+      isCorrect: { type: Boolean, default: false },
+    },
+  ],
 });
 
 export default mongoose.model("Question", questionSchema);
